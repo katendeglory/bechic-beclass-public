@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="201.541" height="196.313"
+  viewBox="0 0 201.541 196.313">
+  <defs>
+    <style>
+      .a {
+        fill: #ff6584;
+        opacity: 0.04;
+      }
+
+      .b {
+        filter: url(#a);
+      }
+    </style>
+    <filter id="a" x="0" y="0" width="201.541" height="196.313" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha" />
+      <feGaussianBlur stdDeviation="2" result="b" />
+      <feFlood flood-color="#ff6584" />
+      <feComposite operator="in" in2="b" />
+      <feComposite in="SourceGraphic" />
+    </filter>
+  </defs>
+  <g class="b" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path class="a" d="M79.5,0,159,106H0Z" transform="translate(6 108.31) rotate(-41)" />
+  </g>
+</svg>

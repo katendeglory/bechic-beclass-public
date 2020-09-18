@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.btn-primary {
+  @apply rounded-full block w-48 py-3 text-center bg-gradient-to-r from-brand-strong-orange to-brand-weaker-orange text-white transition-shadow duration-700;
+  box-shadow: 0 10px 15px -3px rgba(250, 164, 59, 0.6), 0 4px 6px -2px rgba(250, 164, 59, 0.4);
+}
+
+.btn-secondary {
+  @apply rounded-full block w-48 py-3 text-center bg-gradient-to-r from-brand-strong-green to-brand-weaker-green text-white transition-shadow duration-700;
+  box-shadow: 0 10px 15px -3px rgba(2, 195, 154, 0.6), 0 4px 6px -2px rgba(2, 195, 154, 0.4);
+}
+
+.btn-tertiary {
+  @apply rounded-full block w-48 py-3 text-center bg-gradient-to-r from-brand-strong-pink to-brand-weak-pink text-white transition-shadow duration-700;
+  box-shadow: 0 10px 15px -3px rgba(255, 101, 132, 0.6), 0 4px 6px -2px rgba(255, 101, 132, 0.4);
+}
+
+.btn-red {
+  @apply rounded-full block w-48 py-3 text-center bg-gradient-to-r from-brand-strong-red to-brand-weak-red text-white transition-shadow duration-700;
+  box-shadow: 0 10px 15px -3px rgba(231, 111, 81, 0.6), 0 4px 6px -2px rgba(231, 111, 81, 0.4);
+}
+
+.btn-blue {
+  @apply rounded-full block w-48 py-3 text-center bg-gradient-to-r from-brand-strong-blue to-brand-weak-blue text-white transition-shadow duration-700;
+  box-shadow: 0 10px 15px -3px rgba(0, 153, 255, 0.6), 0 4px 6px -2px rgba(0, 153, 255, 0.4);
+}
+
+.btn-yellow {
+  @apply rounded-full block w-48 py-3 text-center bg-gradient-to-r from-brand-strong-yellow to-brand-weak-yellow text-white transition-shadow duration-700;
+  box-shadow: 0 10px 15px -3px rgba(255, 215, 0, 0.6), 0 4px 6px -2px rgba(255, 215, 0, 0.4);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 3px 4px -2px rgba(250, 164, 59, 0.6), 0 1px 2px -1px rgba(250, 164, 59, 0.4);
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 3px 4px -2px rgba(2, 195, 154, 0.6), 0 1px 2px -1px rgba(2, 195, 154, 0.4);
+}
+
+.btn-tertiary:hover {
+  box-shadow: 0 3px 4px -2px rgba(255, 101, 132, 0.6), 0 1px 2px -1px rgba(255, 101, 132, 0.4);
+}
+
+.btn-red:hover {
+  box-shadow: 0 3px 4px -2px rgba(231, 111, 81, 0.6), 0 1px 2px -1px rgba(231, 111, 81, 0.4);
+}
+
+.btn-blue:hover {
+  box-shadow: 0 3px 4px -2px rgba(0, 153, 255, 0.6), 0 1px 2px -1px rgba(0, 153, 255, 0.4);
+}
+
+.btn-yellow:hover {
+  box-shadow: 0 3px 4px -2px rgba(255, 215, 0, 0.6), 0 1px 2px -1px rgba(255, 215, 0, 0.4);
+}
+
+/**********************************************************************************************
+  FORMS CUSTOMIZATION 
+***********************************************************************************************/
+
+select, input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea, .selectContainer {
+  @apply text-sm rounded-lg border-none cursor-pointer bg-white text-gray-800 !important;
+}
+
+select, input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea {
+  @apply inline-block px-4 py-3 w-full cursor-text !important;
+}
+
+select:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, textarea:focus, .selectContainer input:focus {
+  @apply outline-none border-brand-strong-green !important;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder, input[type="number"]::placeholder, {
+  font-family: inherit !important;
+  @apply text-gray-400 text-base !important;
+}
+
+*:focus {
+  @apply outline-none !important;
+}
+
+/* 
+  SVELTE SELECT
+  -------------
+  
+  Use shadows in the parent wrapping the select component for the effect to work.
+
+  .selectContainer > selectedItem > selection(text) 
+  .selectContainer > input 
+  .selectContainer > clearSelect
+  .selectContainer > div > .listContainer > listItem > item(text)
+
+  * shared classname : svelte-2eeumy or input field
+*/
+
+/* Dropdown list */
+
+.listItem .item {
+  @apply bg-transparent !important;
+}
+
+.listItem .item:hover {
+  @apply font-bold bg-transparent !important;
+}
+
+.listItem .item.active {
+  @apply bg-gradient-to-r from-brand-strong-orange to-brand-weaker-orange text-white !important;
+}
+
+/* Reset */
+
+.selectContainer * {
+  @apply bg-transparent !important;
+}
+
+.listContainer {
+  @apply bg-white !important;
+}
+
+.selectContainer input::placeholder {
+  font-family: inherit !important;
+  @apply text-gray-400 text-base !important;
+}

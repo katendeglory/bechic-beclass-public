@@ -1,0 +1,69 @@
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  background: #f7fafc;
+}
+
+.hero-font {
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Rubik', sans-serif; */
+  font-family: 'PT Serif', serif;
+}
+
+*::selection {
+  background-color: #F7B658;
+  opacity: .15;
+  color: white;
+}
+
+:root {
+  --thumbScroll: #cbd5e0;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--thumbScroll);
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--thumbScroll);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--thumbScroll);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
